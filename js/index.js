@@ -18,7 +18,7 @@ const topBar = `<div class="top-bar">
         </span>
       </div>
     </a>
-    <a href="./aula.html">
+    <a href="https://luizcarlos007.github.io/aula/">
       <div class='item '>
       <i class='bx bxs-graduation'></i>
         <span>
