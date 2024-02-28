@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif !important;
+}
+body {
+	background-color: #212425;
+	color: #fff;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 90px;
+}
+.container {
+	max-width: 450px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.list {
+	display: flex;
+	overflow-x: auto;
+	gap: 15px;
+}
+.item:hover {
+	opacity: 0.7;
+}
+.list a {
+	text-decoration: none;
+}
+.item img {
+	display: flex;
+	max-width: 130px;
+	max-height: 130px;
+	border-radius: 8px 8px 0 0;
+}
+.item .text {
+	padding: 6.4px;
+	background-color: #323637;
+	font-size: 13px;
+	color: #fff;
+	border-radius: 0 0 8px 8px;
+}
+.title-list {
+	font-size: 21px;
+	margin: 16px 0 8px 0;
+}
+
+.custom-alert {
+	background-color: rgba(25, 28, 29, 0.8);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	color: #f1e315;
+	font-size: 18px;
+	text-align: center;
+	margin: 16px 0;
+}
+.custom-alert a {
+	color: #1587f1;
+	text-decoration: underline;
+}
+.custom-alert a:hover {
+	color: #0867c0;
+}
+.custom-alert i {
+	font-size: 60px;
+	margin-bottom: 8px;
+}
+.iframe-embed {
+	position: relative;
+	width: 100%;
+	height: 70vh;
+	border-radius: 8px;
+	z-index: 99 !important;
+}
+.iframe-embed {
+	height: 77vh;
+	margin-bottom: 64px;
+}
+.full {
+	position: relative;
+	z-index: 9999;
+	width: 100% !important;
+	min-width: 100% !important;
+	height: calc(100vh - 67px);
+}
+.carousel-item {
+	background-color: #181a1b;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.carousel-item img {
+	display: flex;
+	margin: 0 auto;
+	max-width: 400px;
+	width: 100%;
+}
+.marginright4 {
+	margin-right: 20px;
+}
+.iframe-container {
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+.spinner {
+	border: 5px solid #dcdcdc;
+	border-left-color: transparent;
+	border-radius: 100%;
+	height: 50px;
+	width: 50px;
+	animation: loading 1s linear infinite;
+	margin-top: 20px;
+}
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.spinner-container {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+
+.youtube-video-wrap {
+}
+
+.youtube-video {
+	aspect-ratio: 16 / 9;
+	width: 100%;
+}
+
+.lesson-page h4 {
+	font-weight: 400;
+}
+.lesson-page b {
+	font-size: 21px;
+	color: #a02323;
+	font-weight: 700;
+}
+
+.button-reg {
+	margin-top: 8px;
+	border-radius: 8px;
+	padding: 10px 20px;
+	background-color: #1e66b8;
+	cursor: pointer;
+}
+.button-reg:hover {
+	background-color: #104b8f;
+}
+.without-style {
+	text-decoration: none !important;
+	color: #fff;
+}
+.without-style:hover {
+	color: #979797;
+}
+
+.notify {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: -100px;
+	bottom: 15px;
+	background-color: #165cc5;
+	border-radius: 50px;
+	padding: 10px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	transition: left 0.5s;
+	box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.3),
+		0px 6px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.notify:hover {
+	background-color: #0a4194 !important;
+}
+
+.notify svg {
+	width: 80px !important;
+}
+
+.notify-card {
+	position: fixed;
+	top: -500px;
+	left: 50%;
+	z-index: 999999999999999;
+	transform: translateX(-50%);
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 360px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.3),
+		0px 6px 6px 0px rgba(0, 0, 0, 0.3);
+	transition: top 0.5s;
+}
+.notify-card img {
+	max-width: 80px;
+	max-height: 80px;
+}
+.notify-card .left {
+	display: flex;
+	align-items: center;
+}
+.notify-card .left p {
+	margin: 0;
+	text-align: left;
+	margin-left: 15px;
+	line-height: 1.2;
+	color: #181a1b;
+}
+.notify-card .buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 8px;
+}
+.notify-card .buttons .button-1 {
+	cursor: pointer;
+	padding: 10px 20px;
+	color: #323637;
+}
+.notify-card .buttons .button-2 {
+	cursor: pointer;
+	color: #fff;
+	background-color: #165cc5;
+	border-radius: 8px;
+	padding: 10px 20px;
+}

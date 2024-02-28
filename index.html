@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GamesGPT</title>
+		<link rel="icon" href="images/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+		<link href="css/boxicons.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/layout.css">
+	</head>
+	<body>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="./aula.html">
+						<img src="images/learn.png" alt="">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="./jogos/tiger.html" id="aviatorAnchor" target="_blank">
+						<img src="images/tiger.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<div class="container">
+			<h4 class="title-list">Novos Jogos</h4>
+			<div class="list">
+				<a href="file:///C:/Users/Luiz/Downloads/gpt/tiger/index.html">
+					<div class="item">
+						<img src="images/FortuneTiger.png" alt="">
+						<div class="text">Fortune Tiger</div>
+					</div>
+				</a>
+				<a href="file:///C:/Users/Luiz/Downloads/gpt/rabbit/index.html">
+					<div class="item">
+						<img src="images/FortuneRabbit.png" alt="">
+						<div class="text">Fortune Rabbit</div>
+					</div>
+				</a>
+				<a href="file:///C:/Users/Luiz/Downloads/gpt/ox/index.html">
+					<div class="item">
+						<img src="images/FortuneOx.png" alt="">
+						<div class="text">Fortune Ox</div>
+					</div>
+				</a>
+				<a href="./jogos/mouse.html">
+					<div class="item">
+						<img src="images/FortuneMouse.png" alt="">
+						<div class="text">Fortune Mouse</div>
+					</div>
+				</a>
+			</div>
+			<h4 class="title-list">Populares</h4>
+			<div class="list">
+				<a href="./jogos/ganesha.html">
+					<div class="item">
+						<img src="images/GaneshaFortune.png" alt="">
+						<div class="text">Ganesha Fortune</div>
+					</div>
+				</a>
+				<a href="./jogos/mines.html">
+					<div class="item">
+						<img src="images/mines.png" alt="">
+						<div class="text">Mines</div>
+					</div>
+				</a>
+				<a href="./jogos/aviator.html">
+					<div class="item">
+						<img src="images/Aviator.png" alt="">
+						<div class="text">Aviator</div>
+					</div>
+				</a>
+				<a href="./jogos/spaceman.html">
+					<div class="item">
+						<img src="images/spaceman.png" alt="">
+						<div class="text">Spaceman</div>
+					</div>
+				</a>
+				<a href="./jogos/ninjacrash.html">
+					<div class="item">
+						<img src="images/ninjacrash.jpg" alt="">
+						<div class="text">Ninja Crash</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="custom-alert">
+				<i class="bx bxs-error"></i>
+				O aplicativo precisa sincronizar corretamente com a casa de apostas. Ele
+				não funciona em contas antigas, crie uma nova conta.
+
+				<a href="https://tgjogo.com?code=1223283" class="mt-2">Criar conta</a>
+			</div>
+		</div>
+
+		<div class="notify" onclick="notifyMe()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #ffffff">
+				<path d="M12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z"></path>
+			</svg>
+		</div>
+		<div class="notify-card">
+			<div class="left">
+				<img src="images/03.png" alt="">
+				<p>
+					Quer ser avisado quando o Aplicativo encontrar um sinal super assertivo para você lucrar?
+				</p>
+			</div>
+			<div class="buttons">
+				<div class="button-1" onclick="closeNotify()">Não</div>
+				<div class="button-2" onclick="notifyMe();closeNotify();">
+					Quero ser avisado
+				</div>
+			</div>
+		</div>
+	
+
+	<script src="js/notifications.js"></script>
+	
+		<script src="js/index.js"></script>
+		<script src="js/injectconfig.js"></script>
+
+		<script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+		<script src="js/popper.min.js" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+	
+
+</body></html>
